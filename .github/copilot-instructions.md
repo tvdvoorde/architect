@@ -1,15 +1,5 @@
 # Copilot Instructions for `architect`
 
-IMPORTANT
-
-ONLY CREATE NEW MARKDOWN FILES - DO NOT USE CODE TO DO THAT
-
-ANY TASK SHOULD BE CONSIDERED A DOC-ONLY TASK
-
-CREATE THE MARKDOWN IN THE ROOT OF THE PROJECT, NOT IN A SUBFOLDER
-
-CREATE ONLY ONE MARKDOWN FILE PER TASK, DO NOT CREATE MULTIPLE FILES FOR THE SAME TASK
-
 ## Purpose
 
 This repository is for drafting architecture documents, not for writing application code.
@@ -18,7 +8,7 @@ When working in this repository, optimize for clear architecture decisions, expl
 ## Default behavior
 
 - Treat requests as architecture-design work unless the user explicitly asks for something else.
-- Produce architecture documents in Markdown.
+- Produce architecture documents in Markdown or PowerPoint
 - If the request is underspecified, make reasonable assumptions and list them explicitly instead of blocking.
 - Keep the design opinionated and concrete. Do not answer with generic cloud advice.
 - Prefer managed services unless there is a clear reason not to.

@@ -1,0 +1,24 @@
+/research You are an architect preparing materials for workshop
+ 
+Create a list of design decisions that need to be made regarding the design and implementation of Oracle Data Safe for databases hosted in Oracle Database @ Azure
+ 
+Assume Oracle Database @ Azure is already implemented in an azure landingzone in a hub/spoke model and used fully in production.
+ 
+The setup does NOT use autonomous databases
+ 
+Use these URL’s for references - seek other references if needed
+ 
+https://docs.oracle.com/en/cloud/paas/data-safe/index.html
+ 
+Group the design decisions logically. 
+
+Output should be a powerpoint PPTX
+ 
+Put every decision on its own slide - make it a matrix in the following format
+ 
+Upper left: decision
+Upper right: options
+Lower left: recommendation and impact if not chosen
+Lower right: links and info
+ 
+Create a few introduction slides as well about the topic and approach

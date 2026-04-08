@@ -1,0 +1,35 @@
+Should Oracle Data Safe reside in the same OCI tenancy used by Oracle Database@Azure, or in a dedicated security tenancy?
+In which OCI compartment(s) should Data Safe resources (private endpoints, targets, audit profiles, masking policies, sensitive data models) reside?
+What OCI IAM policies are required, who are the principals (groups), and at what compartment level should policies be defined?
+How will Azure AD identities be federated into OCI IAM to allow Azure-native operators to access Oracle Data Safe?
+How should roles between Database Administrator, Security Administrator, and Data Safe Operator be separated?
+How will Oracle Data Safe (OCI-side service) establish connectivity to Oracle Database@Azure databases residing in Azure VNets?
+In which OCI VCN and subnet should the Oracle Data Safe Private Endpoint be created?
+What OCI security list / NSG rules and Azure NSG rules are needed to allow Data Safe to communicate with databases?
+Should Data Safe connect to Oracle Database@Azure databases using TCP (with network encryption) or TCPS (TLS/SSL)?
+Which Oracle databases hosted in Oracle Database@Azure should be registered with Data Safe, and in which compartment?
+Should Oracle Data Safe target registration be automated (IaC / OCI CLI) or performed manually per database?
+Which compliance framework(s) should drive security assessment findings: CIS, STIG, GDPR, Oracle Best Practices, or a combination?
+How frequently should security assessments run, and what constitutes the approved security baseline?
+What is the process for triaging, assigning, tracking, and accepting/remediating security assessment findings?
+Which user accounts should be included in user assessment, and how often should it run?
+What governance process should be triggered when Data Safe identifies Critical or High risk user accounts?
+Which Oracle Data Safe audit policies (predefined, Oracle predefined, custom) should be provisioned on each target database?
+Which Oracle database audit mode should be used as the source for Data Safe activity auditing: Unified Auditing or Traditional Auditing?
+How long should audit data be retained in Oracle Data Safe?
+How will the organisation stay within the 1 million free-tier audit records/month/target, and what is the budget approval process for overages?
+How should audit data beyond the Data Safe retention period be archived for long-term compliance?
+Which Oracle Data Safe alert policies should be enabled, and for which target databases?
+How and to whom should Oracle Data Safe alerts be delivered?
+What is the security operations process for triaging, investigating, and closing Data Safe alerts?
+Which database schemas and tables should be included in sensitive data discovery, and who approves the sensitive data model?
+Does the organisation have proprietary or jurisdiction-specific sensitive data types not covered by the 150+ Oracle predefined types?
+How frequently should sensitive data discovery be re-run to capture schema changes?
+Which non-production environments should receive masked data, and what is the masking governance process?
+Should masking use Oracle predefined formats, custom formats, or a combination? Who owns format design and approval?
+How and how often should non-production databases be refreshed with newly masked production data?
+Should Oracle Data Safe audit events and alerts be integrated with a SIEM? If yes, which platform and how?
+Should Oracle Data Safe configuration (targets, audit profiles, masking policies, alert policies) be managed as code?
+How should Oracle Data Safe reports be generated and distributed for compliance (internal audit, external auditors, DPO)?
+What OCI service limits for Oracle Data Safe need to be planned and potentially increased before production onboarding?
+How should Oracle Data Safe findings be coordinated with Microsoft Defender for Cloud, which monitors the Oracle DB@Azure infrastructure layer?
